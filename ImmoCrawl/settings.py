@@ -86,6 +86,7 @@ HTTPCACHE_IGNORE_HTTP_CODES=[]
 HTTPCACHE_STORAGE='scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 ITEM_PIPELINES = {
+    'ImmoCrawl.pipelines.RefineDataPipeline': 200,
     'ImmoCrawl.pipelines.MongoDBPipeline': 300,
 }
 
